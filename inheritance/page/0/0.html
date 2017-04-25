@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style-next.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Задайте вложенным элементам размеры шрифта<br>
+          соответствующие комментариям <br>
+          с помощью <span class="bold">ненаследуемой</span> единицы измерения <span class="bold">rem</span>.<br>
+          Для этого нужно сделать расчет: <br>
+          размер font-size селектора html принимать за <span class="bold">1rem</span> <br>
+       </h1>
+      <pre class="code">
+          .html { <em class="white">font-size:</em> 1rem; }
+          .box1 { <em class="white">font-size:</em> <input type="number" id="fz1" value="0">rem; } <span class="comment">// 20px</span>
+          .box2 { <em class="white">font-size:</em> <input type="number" id="fz2" value="0">rem; } <span class="comment">// 18px</span>
+          .box3 { <em class="white">font-size:</em> <input type="number" id="fz3" value="0">rem; } <span class="comment">// 14px</span>
+      </pre>
+      <button class="sbmt" type="submit" id="sb">применить</button>
+      <a class="sbmt" type="submit" id="next" href="../1/01.html">Следующее задание</a>
+      <!-- ======================= #RESAULT ========================== -->
+      <div class="container center" id="container">
+        <span class="white">html { font-size: 16px; }</span>
+        <div class="box1" id="box1">box1 <span class="aim">20px</span>
+          <div class="box2" id="box2">box2 <span class="aim">18px</span>
+            <div class="box3" id="box3">box3 <span class="aim">14px</span></div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================= #END RESAULT ========================== -->
+    </div>
+    <div id="congratulation">
+      <h1>Поздравляю!<br>
+        Вы ответили правильно!</h1>
+      <p class="closing">Чтобы закрыть сообщение - кликните по этому окну.</p>
+    </div>
+    <script src="../../../js/libDOM.js"></script>
+    <script src="main-next.js"></script>
+    <script src="../../../js/alert.js"></script>
+    <script>
+        about('Свойство CSS font-size наследуется от родительского блока. Единица измерения REM наследуется только от html.');
+    </script>
+      <script src="../../../js/close_modal.js"></script>
+</body>
+
+</html>

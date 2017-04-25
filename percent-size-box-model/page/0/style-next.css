@@ -1,0 +1,34 @@
+.box-goal {
+  width: 98px;
+  height: 58px;
+  border: 1px dotted  #eee;
+  position: absolute;
+  right: 0;
+}
+
+.box1, .box2, .box3 {
+  box-shadow: 3px 3px 5px 3px hsla(360, 0%, 0%, 0.3);
+  text-align: center;
+  color: #eee;
+}
+
+.box1 {
+  width: 560px;
+  height: 260px;
+  margin: 20px auto;
+  background: hsla(248, 56%, 55%, 0.5);
+}
+
+.box2 {
+  width: 520px;
+  height: 220px;
+  margin: 20px auto;
+  background: hsla(248, 56%, 65%, 0.5);
+}
+
+.box3 {
+  width: 480px;
+  height: 180px;
+  margin: 20px auto;
+  background: hsla(248, 56%, 75%, 0.5);
+}

@@ -1,0 +1,19 @@
+.green { color: green;}
+.red { color: red;}
+.blue { color: blue;}
+.yellow { color: yellow;}
+
+.box1, .box2, .box3, .box4 {
+  width: 560px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px auto;
+  color: #eee;
+  text-align: center;
+  box-shadow: 3px 3px 5px 3px hsla(360, 0%, 0%, 0.3);
+}
+
+.box1 {  background: hsla(248, 56%, 55%, 0.5); }
+.box2 {  background: hsla(248, 56%, 65%, 0.5); }
+.box3 {  background: hsla(248, 56%, 75%, 0.5); }
+.box4 {  background: hsla(248, 56%, 85%, 0.5); }

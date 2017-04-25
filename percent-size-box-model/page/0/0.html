@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style-next.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Задайте вложенному блоку размеры width и height в %<br>
+          соответствующие комментариям, указанным в px.
+       </h1>
+      <pre class="code">
+          .parent {
+            <em class="white">width:</em>  600px;
+            <em class="white">height:</em> 300px;
+          }
+          .child {
+            <em class="white">width:</em> <input type="number" id="fz1" value="0">%;  <span class="comment">// 420px</span>
+            <em class="white">height:</em> <input type="number" id="fz2" value="0">%;  <span class="comment">// 210px</span>
+          }
+      </pre>
+      <button class="sbmt" type="submit" id="sb">применить</button>
+      <a class="sbmt" type="submit" id="next" href="../1/01.html">Следующее задание</a>
+      <!-- ======================= #RESAULT ========================== -->
+      <div class="container center" id="container">
+        <span class="white">.parent { width: 600px; height: 300px}</span>
+        <div class="box1" id="box1">
+          .child
+          <span class="aim">{ width: 420px; height: 210px}</span>
+        </div>
+      </div>
+      <!-- ======================= #END RESAULT ========================== -->
+    </div>
+    <div id="congratulation">
+      <h1>Поздравляю!<br>
+        Вы ответили правильно!</h1>
+        <p class="closing">Чтобы закрыть сообщение - кликните по этому окну.</p>
+    </div>
+    <script src="../../../js/libDOM.js"></script>
+    <script src="main-next.js"></script>
+    <script src="../../../js/alert.js"></script>
+    <script>
+        about('Размеры блока в процентах: child width 100% = parent width. Child height 100% = parent height.');
+    </script>
+      <script src="../../../js/close_modal.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style-next.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Посчитайте специфичность каждого селектора <br>
+          и впишите нужное число в каждый разряд.
+       </h1>
+      <pre class="code">
+    <table class="tg">
+  <tr>
+    <th class="tg-4dst le">селектор</th>
+    <th class="tg-otz6">inline <br> important!</th>
+    <th class="tg-4dst">#id <br> important!</th>
+    <th class="tg-otz6">.class <br> important!</th>
+    <th class="tg-4dst">tag <br> important!</th>
+    <th class="tg-tgsz">inline</th>
+    <th class="tg-xvfi">#id <br> &nbsp;&nbsp;&nbsp;&nbsp;</th>
+    <th class="tg-e2zi">.class <br> псевдо<br>класс</th>
+    <th class="tg-xvfi">tag <br> псевдо<br>элемент</th>
+  </tr>
+  <tr>
+    <td class="tg-4dst le">ul  &gt; li &gt; a:hover {<br>
+       color: red; <br>}
+    </td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_im0"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_id0"></td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_cl0"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_tg0"></td>
+    <td class="tg-tgsz"><input type="number" value="0"  id="im0"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="id0"></td>
+    <td class="tg-e2zi"><input type="number" value="0"  id="cl0"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="tg0"></td>
+  </tr>
+  <tr>
+    <td class="tg-4dst le">&lt;em style="color: red;"&gt;</td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_im1"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_id1"></td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_cl1"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_tg1"></td>
+    <td class="tg-tgsz"><input type="number" value="0"  id="im1"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="id1"></td>
+    <td class="tg-e2zi"><input type="number" value="0"  id="cl1"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="tg1"></td>
+  </tr>
+  <tr>
+    <td class="tg-4dst le">#box &gt; .box + p::first-letter {<br>
+       color: red; <br>}</td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_im2"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_id2"></td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_cl2"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_tg2"></td>
+    <td class="tg-tgsz"><input type="number" value="0"  id="im2"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="id2"></td>
+    <td class="tg-e2zi"><input type="number" value="0"  id="cl2"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="tg2"></td>
+  </tr>
+  <tr>
+    <td class="tg-4dst le">div &gt; ul &gt; li::nth-of-type(1) {<br>
+      color: red !important; <br>} </td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_im3"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_id3"></td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_cl3"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_tg3"></td>
+    <td class="tg-tgsz"><input type="number" value="0"  id="im3"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="id3"></td>
+    <td class="tg-e2zi"><input type="number" value="0"  id="cl3"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="tg3"></td>
+  </tr>
+  <tr>
+    <td class="tg-4dst le">&lt;em style="color: red !important;"&gt;</td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_im4"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_id4"></td>
+    <td class="tg-otz6"><input type="number" value="0"  id="i_cl4"></td>
+    <td class="tg-4dst"><input type="number" value="0"  id="i_tg4"></td>
+    <td class="tg-tgsz"><input type="number" value="0"  id="im4"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="id4"></td>
+    <td class="tg-e2zi"><input type="number" value="0"  id="cl4"></td>
+    <td class="tg-xvfi"><input type="number" value="0"  id="tg4"></td>
+  </tr>
+</table>
+      </pre>
+      <button class="sbmt" type="submit" id="sb">применить</button>
+      <a class="sbmt" type="submit" id="next" href="../../../index.html">Вернуться на первую страницу.</a>
+    </div>
+    <div id="congratulation">
+        <h1>Поздравляю!<br>
+          Вы ответили правильно!
+        </h1>
+        <p class="closing">Чтобы закрыть сообщение - кликните по этому окну.</p>
+      </div>
+    <script src="../../../js/libDOM.js"></script>
+    <script src="main-next.js"></script>
+    <script src="../../../js/alert.js"></script>
+    <script>
+        about('Тэг - нулевой разряд, класс и псевдокласс - первый разряд, # - второй разряд, а инлайн - третий. Свойство !impotant добавляет 4 разряда. Чем выше разряд, тем выше специфичность CSS правила. ');
+    </script>
+      <script src="../../../js/close_modal.js"></script>
+</body>
+
+</html>

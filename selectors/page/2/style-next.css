@@ -1,0 +1,37 @@
+.wrapper {
+  width: 960px;
+}
+
+
+.green { color: green;}
+.red { color: red;}
+.blue { color: blue;}
+.yellow { color: yellow;}
+
+.box1, .box2, .box3, .box4 {
+  width: 560px;
+  height: 50px;
+  line-height: 50px;
+  margin: 10px auto;
+  color: #eee;
+  text-align: center;
+  box-shadow: 3px 3px 5px 3px hsla(360, 0%, 0%, 0.3);
+}
+
+.box1 {  background: hsla(248, 56%, 55%, 0.5); }
+.box2 {  background: hsla(248, 56%, 65%, 0.5); }
+.box3 {  background: hsla(248, 56%, 75%, 0.5); }
+.box4 {  background: hsla(248, 56%, 85%, 0.5); }
+
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+.tg .tg-4dst{font-size:16px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#6665cd;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-xvfi{font-size:16px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#efefef;text-align:center;vertical-align:top}
+.tg .tg-otz6{font-size:16px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#9698ed;color:#ffffff;text-align:center;vertical-align:top}
+.tg .tg-tgsz{font-size:16px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#ffffc7;text-align:center;vertical-align:top}
+.tg .tg-e2zi{font-size:16px;font-family:Arial, Helvetica, sans-serif !important;;background-color:#ffffc7;color:#c0c0c0;text-align:center;vertical-align:top}
+.le { text-align: left !important; }
+input[type="number"] {
+  width: 36px;
+}
