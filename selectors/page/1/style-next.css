@@ -17,3 +17,19 @@
 .box2 {  background: hsla(248, 56%, 65%, 0.5); }
 .box3 {  background: hsla(248, 56%, 75%, 0.5); }
 .box4 {  background: hsla(248, 56%, 85%, 0.5); }
+
+/*.container div:first-of-type {
+   color: red;
+}
+
+.container div:first-of-type ~ div{
+  color: yellow;
+}
+
+.container div:first-of-type + div{
+  color: blue;
+}
+
+#box4 {
+  color: green;
+}*/

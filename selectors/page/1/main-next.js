@@ -25,9 +25,9 @@ sb.addEventListener('click', function() {
 
   // cont.style.cssText = `color: ${color1};`;  //
   box1.style.cssText = `color: ${color1};`;  // red
-  box2.style.cssText = `color: ${color2};`;  // blue
-  box3.style.cssText = `color: ${color3};`;  // yellow
-  box4.style.cssText = `color: ${color4};`;  // yellow
+  box2.style.cssText = `color: ${color3};`;  // blue
+  box3.style.cssText = `color: ${color2};`;  // yellow
+  box4.style.cssText = `color: ${color4};`;  // green
 
   var isColor1 = (color1 == "red") ? 1 : 0;
   if (isColor1 != 1) {alert ("Ошибка в .box1")};
