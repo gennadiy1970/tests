@@ -21,8 +21,8 @@ sb.addEventListener('click', function() {
   // let lc = Math.floor(box.getBoundingClientRect().left - LEFT);
   // console.log('lc = ', lc);
   if(x == 500) {
-    next.style.display = 'block';
-    cong.style.display = 'block';
+    next.style.display = 'inline-block';
+    cong.style.display = 'inline-block';
     sb.style.display = 'none';
   }
   boxX.textContent = x;

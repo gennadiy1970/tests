@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha256-gvEnj2axkqIj4wbYhPjbWV7zttgpzBVEgHub9AAZQD4=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="style-next.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Задайте каждому селектору цвет, так, чтобы<br>
+          container был <span class="green">green</span>,<br>
+          box1 был <span class="red">red</span>,<br>
+          box2 был <span class="blue">blue</span>,<br>
+          box3 и box4 были <span class="yellow">yellow</span>.<br>
+       </h1>
+      <pre class="code">
+        <span class="comment">=============== HTML ===============</span>
+        &lt;div class="container"&gt;<span class="white">container</span>
+          &lt;div&gt;<span class="white">box1</span>
+            &lt;div&gt;<span class="white">box2</span>
+              &lt;div&gt;<span class="white">box3</span>
+                &lt;div&gt;<span class="white">box4</span>&lt;/div&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+    <span class="comment">================== CSS ==============================</span>
+    .container { <em class="white">color:</em> <input type="text" id="fz1">;}
+    .container div { <em class="white">color:</em> <input type="text" id="fz2">;}
+    .container &gt; div { <em class="white">color:</em> <input type="text" id="fz3">;}
+    .container &gt; div &gt; div { <em class="white">color:</em> <input type="text" id="fz4">;}
+      </pre>
+      <button class="sbmt" type="submit" id="sb">применить</button>
+      <a class="sbmt" type="submit" id="next" href="../1/index.html">Следующее задание</a>
+      <!-- ======================= #RESAULT ========================== -->
+      <div class="container center" id="container">container
+        <div class="box1" id="box1">box1
+          <div class="box2" id="box2">box2
+            <div class="box3" id="box3">box3
+              <div class="box4" id="box4">box4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ======================= #END RESAULT ========================== -->
+    </div>
+    <div id="congratulation">
+        <h1>Поздравляю!<br>
+          Вы ответили правильно!
+        </h1>
+        <p class="closing">Чтобы закрыть сообщение - кликните по этому окну.</p>
+      </div>
+    <script src="../../../js/libDOM.js"></script>
+    <script src="main-next.js"></script>
+    <script src="../../../js/alert.js"></script>
+    <script>
+        about('Селекторы. Выражение "parent > child" выбирает непосредственного потомока, а "parent child" - всех потомков.');
+    </script>
+      <script src="../../../js/close_modal.js"></script>
+</body>
+
+</html>

@@ -37,8 +37,8 @@ sb.addEventListener('click', function() {
   if (x == "auto" || x == "auto;" || x == "250px") {
     if (x2 == "auto" || x2 == "auto;" || x2 == "250px") {
       if ( yt == "50px" && parseInt(yb) <= 25 && parseInt(yt2) == 25) {
-        next.style.display = 'block';
-        cong.style.display = 'block';
+        next.style.display = 'inline-block';
+        cong.style.display = 'inline-block';
         sb.style.display = 'none';
       }
     }

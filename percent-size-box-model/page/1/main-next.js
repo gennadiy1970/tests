@@ -32,8 +32,8 @@ sb.addEventListener('click', function() {
   console.log('all = ', isSize1 + " " + isSize2 + " " + isSize3 + " " + isSize4);
 
   if(isSize1 + isSize2 + isSize3 + isSize4 === 4) {
-    next.style.display = 'block';
-    cong.style.display = 'block';
+    next.style.display = 'inline-block';
+    cong.style.display = 'inline-block';
     sb.style.display = 'none';
   }
 

@@ -102,26 +102,27 @@ input[type="number"] {
 }
 
 .sbmt {
-  display: block;
-  width: 40rem;
-  padding: 0.5rem;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 1;
+  padding: 18px 22px 22px;
   border-radius: 4px;
-  margin: auto;
+  margin-top: 22px;
+  margin-bottom: 12px;
+  margin-left: 50%;
+  transform: translateX(-50%);
   cursor: pointer;
   background-color: hsla( 110, 50%, 50%, 0.5);
   border: 3px solid hsla( 110, 20%, 30%, 1);
   box-shadow: 2px 2px 4px 4px hsla( 110, 0%, 30%, .2);
-  text-transform: uppercase;
-  font-size: 22px;
-  font-family: fantasy;
+  text-transform: lowercase;
   color: hsla( 110, 20%, 20%, 1);
   text-shadow: 2px 2px 1px hsla( 110, 100%, 30%, .5);
   text-decoration: none;
-  text-align: center;
 }
 
 .sbmt:hover {
-    border: 3px solid hsla( 110, 20%, 30%, 0);
+    border: 3px solid hsla( 110, 20%, 30%, 0.8);
     box-shadow: 1px 1px 1px 1px hsla( 110, 0%, 30%, .5);
     text-shadow: 0.5px 0.5px 0.5px hsla( 110, 100%, 100%, .9);
     text-decoration: none;
@@ -156,15 +157,20 @@ input[type="number"] {
 #modalContainer {
 	background-color:rgba(0, 0, 0, 0.3);
 	position:absolute;
-	width:100%;
-	height:100%;
-	top:0px;
-	left:0px;
+  min-width: 320px;
+  width: 75%;
+  min-height: 280px;
+  height: auto;
+	top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
 	z-index:10000;
   color: #fff;
-	background: hsla(100, 0%, 50%, .9);
+	background: hsla(100, 0%, 50%, .95);
   line-height: 100%;
   font-size: 48px;
+  word-wrap: normal;
+  hyphens: auto;
 }
 
 #close {
@@ -186,4 +192,16 @@ cursor: pointer;
   text-align: center;
   margin-top: 30px;
   color: maroon;
+}
+
+
+.title {
+  font-size: 24px;
+  line-height: 1.5;
+  text-indent: 48px;
+}
+
+li.title {
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  text-indent: 74px;
 }

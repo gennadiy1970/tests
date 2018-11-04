@@ -22,7 +22,7 @@ sb.addEventListener('click', function() {
   let res = (x == 500 ? 1 : 0);
 
   if(res == 1) {
-    next.style.display = 'block';
+    next.style.display = 'inline-block';
     cong.style.display = 'block';
     sb.style.display = 'none';
   } else {

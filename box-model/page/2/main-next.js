@@ -35,7 +35,7 @@ sb.addEventListener('click', function() {
 
   box.style.marginLeft= x + 'px';
   if(y == 120 && x == 250) {
-    next.style.display = 'block';
+    next.style.display = 'inline-block';
     cong.style.display = 'block';
     sb.style.display = 'none';
   }

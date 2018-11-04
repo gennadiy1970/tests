@@ -70,8 +70,8 @@ sb.addEventListener('click', function() {
   console.log('all = ', isline0 + " " + isline1 + " " + isline2 + " " + isline3 + " " + isline4);
 
   if(isline0 + isline1 + isline2 + isline3 + isline4 === 5) {
-    next.style.display = 'block';
-    cong.style.display = 'block';
+    next.style.display = 'inline-block';
+    cong.style.display = 'inline-block';
     sb.style.display = 'none';
   }
 

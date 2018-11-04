@@ -41,8 +41,8 @@ sb.addEventListener('click', function() {
   console.log('all = ', isColor1 + " " + isColor2 + " " + isColor3 + " " + isColor4);
 
   if(isColor1 + isColor2 + isColor3 + isColor4 === 4) {
-    next.style.display = 'block';
-    cong.style.display = 'block';
+    next.style.display = 'inline-block';
+    cong.style.display = 'inline-block';
     sb.style.display = 'none';
   }
 
