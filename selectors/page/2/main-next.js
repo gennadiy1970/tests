@@ -62,7 +62,7 @@ sb.addEventListener('click', function() {
   if (isline1 != 1) {alert ("Ошибка во второй строке")};
   var isline2 = (line2 == "00000112") ? 1 : 0;
   if (isline2 != 1) {alert ("Ошибка в третьей строке")};
-  var isline3 = (line3 == "00040000") ? 1 : 0;
+  var isline3 = (line3 == "00130000") ? 1 : 0;
   if (isline3 != 1) {alert ("Ошибка в четвертой строке")};
   var isline4 = (line4 == "10000000") ? 1 : 0;
   if (isline4 != 1) {alert ("Ошибка в пятой строке")};
